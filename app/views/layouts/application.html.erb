@@ -1,15 +1,15 @@
 <!DOCTYPE html>
    <html>
-  
+
   <head>
     <title>Flixter</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-  
+
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-  
+
   <body>
     <div id='flex-content-container'>
       <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
@@ -19,7 +19,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <a class="navbar-brand" href="#"></a>Flixter</a>
-  
+
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul class="navbar-nav mr-auto mt-2 mt-md-0">
             <li class="nav-item">
@@ -52,12 +52,12 @@
     <% end %>
     <%= yield %>
     </div>
-  
+
     <div id="footer">
       <div class="container">
-        <b>Footer Here</b>
+        <b>Teachers</b>
         <br />
-        <%= link_to 'Link', '#' %>
+        <%= link_to 'Teach a Course', new_instructor_course_path %>
       </div>
     </div>
   </body>
